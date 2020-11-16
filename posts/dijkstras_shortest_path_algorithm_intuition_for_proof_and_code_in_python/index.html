@@ -14,8 +14,8 @@ A graph, for those who are unfamiliar or have forgotten, is just a collection of
 Given a graph with positive weights and a source “vertex” i." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/blog/posts/dijkstras_shortest_path_algorithm_intuition_for_proof_and_code_in_python/" />
-<meta property="article:published_time" content="2020-11-16T13:03:28+00:00" />
-<meta property="article:modified_time" content="2020-11-16T13:03:28+00:00" />
+<meta property="article:published_time" content="2020-11-16T15:13:35+00:00" />
+<meta property="article:modified_time" content="2020-11-16T15:13:35+00:00" />
 
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Dijkstra’s Shortest Path Algorithm: Intuition for proof and code in Python "/>
@@ -70,12 +70,12 @@ Given a graph with positive weights and a source “vertex” i."/>
     <span id="actions">
       <ul>
         
-        
         <li>
-          <a class="icon" href="/blog/posts/workflow_for_publishing_blogs_from_ipad_using_bear_and_hugo/">
-            <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
+          <a class="icon" href=" /blog/posts/workflow_for_publishing_blogs_from_ipad_using_bear_and_hugo/">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
           </a>
         </li>
+        
         
         <li>
           <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
@@ -183,7 +183,7 @@ Given a graph with positive weights and a source “vertex” i."/>
         
         <div class="postdate">
           
-          <time datetime="2020-11-16 13:03:28.263408 &#43;0000 UTC" itemprop="datePublished">2020-11-16</time>
+          <time datetime="2020-11-16 15:13:35.642276 &#43;0000 UTC" itemprop="datePublished">2020-11-16</time>
           
         </div>
         
@@ -209,7 +209,7 @@ Given a graph with positive weights and a source “vertex” i."/>
 <p>A graph, for those who are unfamiliar or have forgotten, is just a collection of ordered pairs of “points” which are also called edges.  These pairs of points may have a distance associated with them in which case they are known as “weighted”.</p>
 <p>Given a graph with positive weights and a source “vertex” i.e starting point, we need to find the shortest path from that source vertex to all the other points.
 For example:</p>
-<p><img src="/1605531808/assets/image.png" alt="">From the figure, we can easily calculate the shortest path from <code>A</code> to all the other nodes. Shortest distance from <code>A</code> to <code>F</code> would be 3 since <code>A</code> to <code>C</code> is 1 and <code>C</code> to <code>F</code> is 2. Note that we can also get to <code>F</code> from <code>A</code> through <code>A -&gt; B -&gt; F</code> but while this is also a path, this is not the shortest.</p>
+<p><img src="/blog/1605539615/assets/image.png" alt="">From the figure, we can easily calculate the shortest path from <code>A</code> to all the other nodes. Shortest distance from <code>A</code> to <code>F</code> would be 3 since <code>A</code> to <code>C</code> is 1 and <code>C</code> to <code>F</code> is 2. Note that we can also get to <code>F</code> from <code>A</code> through <code>A -&gt; B -&gt; F</code> but while this is also a path, this is not the shortest.</p>
 <h2 id="intuition-for-the-proof">Intuition for the proof</h2>
 <p>I would strongly recommend you try to find the shortest path from <code>A</code> to all nodes using your own intuition first. This will make the following proof simpler to understand.</p>
 <p>Let’s take the same example as before. If we were to come up with a naive algorithm for this, what would we do? We could always calculate all possible paths from <code>A</code> to all other nodes and choose the smallest path for each. This is obviously way too slow. Let us try to use the fact that the distances are always positive.</p>
@@ -221,9 +221,9 @@ Let us move a step back and see how we can can get to <code>B</code>. From the l
 <p>Claim: This is the best way to get to <code>F</code>.
 Can any other intermediary node help us? What about <code>B</code>? That is certainly going to be above 3 if anything. No other node can help us here. This is because we have ruled out <code>B</code> and <code>F</code> happens to be the closest to <code>C</code>.
 By now you can see the strategy we are taking here, but lets make a couple of modifications to our example for better understanding.</p>
-<p><img src="/1605531808/assets/image%202.png" alt=""></p>
+<p><img src="/blog/1605539615/assets/image%202.png" alt=""></p>
 <p>In this situation, using the same reasoning we can show that shortest distance <code>A -&gt; C</code> is 1. But what about <code>F</code>? Can we really be sure that <code>A -&gt; F</code> is 3? We <em>could</em> do better by probably going through <code>A -&gt; B</code> and then somewhere else right? We haven’t explored that option. Hence for the moment we can only be sure shortest distance for  <code>A -&gt; B</code> is 2 and try to work from here.</p>
-<p><img src="/1605531808/assets/image%203.png" alt=""></p>
+<p><img src="/blog/1605539615/assets/image%203.png" alt=""></p>
 <p>Here, we can be sure of <code>A -&gt; C</code> and <code>A -&gt; F</code> using same strategy. But can we be sure of <code>A -&gt; B</code>? What if we use <code>F</code> as an intermediary node? <em>Maybe</em> <code>F</code> can go to a node <code>Z</code> with a weight .2 and <code>Z -&gt; B</code>  could be achieved with less than .1. We haven’t this explored yet.</p>
 <h2 id="strategy">Strategy</h2>
 <p>In simple words</p>
