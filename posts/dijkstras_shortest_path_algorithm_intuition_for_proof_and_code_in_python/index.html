@@ -13,7 +13,7 @@
 A graph, for those who are unfamiliar or have forgotten, is just a collection of ordered pairs of “points” which are also called edges. These pairs of points may have a distance associated with them in which case they are known as “weighted”.
 Given a graph with positive weights and a source “vertex” i." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/blog/posts/dijkstras_shortest_path_algorithm_intuition_for_proof_and_code_in_python/" />
+<meta property="og:url" content="/posts/dijkstras_shortest_path_algorithm_intuition_for_proof_and_code_in_python/" />
 <meta property="article:published_time" content="2020-11-16T13:03:28+00:00" />
 <meta property="article:modified_time" content="2020-11-16T13:03:28+00:00" />
 
@@ -28,7 +28,7 @@ Given a graph with positive weights and a source “vertex” i."/>
     
   
   
-  <link rel="stylesheet" href="/blog/css/style-white.css">
+  <link rel="stylesheet" href="css/style-white.css">
   
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -37,7 +37,7 @@ Given a graph with positive weights and a source “vertex” i."/>
   
 
   
-<link rel="icon" type="image/png" href="/blog/images/favicon.ico" />
+<link rel="icon" type="image/png" href="images/favicon.ico" />
 
   
   
@@ -56,13 +56,13 @@ Given a graph with positive weights and a source “vertex” i."/>
     <span id="nav">
       <ul>
          
-        <li><a href="/blog/">Home</a></li>
+        <li><a href="../../">Home</a></li>
          
-        <li><a href="/blog/posts">Writings</a></li>
+        <li><a href="../../posts">Writings</a></li>
          
-        <li><a href="/blog/tags">Tags</a></li>
+        <li><a href="../../tags">Tags</a></li>
          
-        <li><a href="/blog/about">About</a></li>
+        <li><a href="../../about">About</a></li>
         
       </ul>
     </span>
@@ -72,7 +72,7 @@ Given a graph with positive weights and a source “vertex” i."/>
         
         
         <li>
-          <a class="icon" href="/blog/posts/workflow_for_publishing_blogs_from_ipad_using_bear_and_hugo/">
+          <a class="icon" href="../../posts/workflow_for_publishing_blogs_from_ipad_using_bear_and_hugo/">
             <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
           </a>
         </li>
@@ -103,57 +103,57 @@ Given a graph with positive weights and a source “vertex” i."/>
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=%2fblog%2fposts%2fdijkstras_shortest_path_algorithm_intuition_for_proof_and_code_in_python%2f">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=%2fposts%2fdijkstras_shortest_path_algorithm_intuition_for_proof_and_code_in_python%2f">
       <i class="fab fa-facebook " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=%2fblog%2fposts%2fdijkstras_shortest_path_algorithm_intuition_for_proof_and_code_in_python%2f&text=Dijkstra%e2%80%99s%20Shortest%20Path%20Algorithm%3a%20Intuition%20for%20proof%20and%20code%20in%20Python%20">
+    <a class="icon" href="https://twitter.com/share?url=%2fposts%2fdijkstras_shortest_path_algorithm_intuition_for_proof_and_code_in_python%2f&text=Dijkstra%e2%80%99s%20Shortest%20Path%20Algorithm%3a%20Intuition%20for%20proof%20and%20code%20in%20Python%20">
       <i class="fab fa-twitter " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=%2fblog%2fposts%2fdijkstras_shortest_path_algorithm_intuition_for_proof_and_code_in_python%2f&title=Dijkstra%e2%80%99s%20Shortest%20Path%20Algorithm%3a%20Intuition%20for%20proof%20and%20code%20in%20Python%20">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=%2fposts%2fdijkstras_shortest_path_algorithm_intuition_for_proof_and_code_in_python%2f&title=Dijkstra%e2%80%99s%20Shortest%20Path%20Algorithm%3a%20Intuition%20for%20proof%20and%20code%20in%20Python%20">
       <i class="fab fa-linkedin " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=%2fblog%2fposts%2fdijkstras_shortest_path_algorithm_intuition_for_proof_and_code_in_python%2f&is_video=false&description=Dijkstra%e2%80%99s%20Shortest%20Path%20Algorithm%3a%20Intuition%20for%20proof%20and%20code%20in%20Python%20">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=%2fposts%2fdijkstras_shortest_path_algorithm_intuition_for_proof_and_code_in_python%2f&is_video=false&description=Dijkstra%e2%80%99s%20Shortest%20Path%20Algorithm%3a%20Intuition%20for%20proof%20and%20code%20in%20Python%20">
       <i class="fab fa-pinterest " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=Dijkstra%e2%80%99s%20Shortest%20Path%20Algorithm%3a%20Intuition%20for%20proof%20and%20code%20in%20Python%20&body=Check out this article: %2fblog%2fposts%2fdijkstras_shortest_path_algorithm_intuition_for_proof_and_code_in_python%2f">
+    <a class="icon" href="mailto:?subject=Dijkstra%e2%80%99s%20Shortest%20Path%20Algorithm%3a%20Intuition%20for%20proof%20and%20code%20in%20Python%20&body=Check out this article: %2fposts%2fdijkstras_shortest_path_algorithm_intuition_for_proof_and_code_in_python%2f">
       <i class="fas fa-envelope " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=%2fblog%2fposts%2fdijkstras_shortest_path_algorithm_intuition_for_proof_and_code_in_python%2f&title=Dijkstra%e2%80%99s%20Shortest%20Path%20Algorithm%3a%20Intuition%20for%20proof%20and%20code%20in%20Python%20">
+    <a class="icon" href="https://getpocket.com/save?url=%2fposts%2fdijkstras_shortest_path_algorithm_intuition_for_proof_and_code_in_python%2f&title=Dijkstra%e2%80%99s%20Shortest%20Path%20Algorithm%3a%20Intuition%20for%20proof%20and%20code%20in%20Python%20">
       <i class="fab fa-get-pocket " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=%2fblog%2fposts%2fdijkstras_shortest_path_algorithm_intuition_for_proof_and_code_in_python%2f&title=Dijkstra%e2%80%99s%20Shortest%20Path%20Algorithm%3a%20Intuition%20for%20proof%20and%20code%20in%20Python%20">
+    <a class="icon" href="http://reddit.com/submit?url=%2fposts%2fdijkstras_shortest_path_algorithm_intuition_for_proof_and_code_in_python%2f&title=Dijkstra%e2%80%99s%20Shortest%20Path%20Algorithm%3a%20Intuition%20for%20proof%20and%20code%20in%20Python%20">
       <i class="fab fa-reddit " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=%2fblog%2fposts%2fdijkstras_shortest_path_algorithm_intuition_for_proof_and_code_in_python%2f&title=Dijkstra%e2%80%99s%20Shortest%20Path%20Algorithm%3a%20Intuition%20for%20proof%20and%20code%20in%20Python%20">
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=%2fposts%2fdijkstras_shortest_path_algorithm_intuition_for_proof_and_code_in_python%2f&title=Dijkstra%e2%80%99s%20Shortest%20Path%20Algorithm%3a%20Intuition%20for%20proof%20and%20code%20in%20Python%20">
       <i class="fab fa-stumbleupon " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://digg.com/submit?url=%2fblog%2fposts%2fdijkstras_shortest_path_algorithm_intuition_for_proof_and_code_in_python%2f&title=Dijkstra%e2%80%99s%20Shortest%20Path%20Algorithm%3a%20Intuition%20for%20proof%20and%20code%20in%20Python%20">
+    <a class="icon" href="http://digg.com/submit?url=%2fposts%2fdijkstras_shortest_path_algorithm_intuition_for_proof_and_code_in_python%2f&title=Dijkstra%e2%80%99s%20Shortest%20Path%20Algorithm%3a%20Intuition%20for%20proof%20and%20code%20in%20Python%20">
       <i class="fab fa-digg " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=%2fblog%2fposts%2fdijkstras_shortest_path_algorithm_intuition_for_proof_and_code_in_python%2f&name=Dijkstra%e2%80%99s%20Shortest%20Path%20Algorithm%3a%20Intuition%20for%20proof%20and%20code%20in%20Python%20&description=What%20is%20shortest%20path%3f%20If%20you%20are%20already%20familiar%20with%20what%20Dijkstra%e2%80%99s%20shortest%20path%20algorithm%20intends%20to%20do%20then%20skip%20this%20section.%0aA%20graph%2c%20for%20those%20who%20are%20unfamiliar%20or%20have%20forgotten%2c%20is%20just%20a%20collection%20of%20ordered%20pairs%20of%20%e2%80%9cpoints%e2%80%9d%20which%20are%20also%20called%20edges.%20These%20pairs%20of%20points%20may%20have%20a%20distance%20associated%20with%20them%20in%20which%20case%20they%20are%20known%20as%20%e2%80%9cweighted%e2%80%9d.%0aGiven%20a%20graph%20with%20positive%20weights%20and%20a%20source%20%e2%80%9cvertex%e2%80%9d%20i.">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=%2fposts%2fdijkstras_shortest_path_algorithm_intuition_for_proof_and_code_in_python%2f&name=Dijkstra%e2%80%99s%20Shortest%20Path%20Algorithm%3a%20Intuition%20for%20proof%20and%20code%20in%20Python%20&description=What%20is%20shortest%20path%3f%20If%20you%20are%20already%20familiar%20with%20what%20Dijkstra%e2%80%99s%20shortest%20path%20algorithm%20intends%20to%20do%20then%20skip%20this%20section.%0aA%20graph%2c%20for%20those%20who%20are%20unfamiliar%20or%20have%20forgotten%2c%20is%20just%20a%20collection%20of%20ordered%20pairs%20of%20%e2%80%9cpoints%e2%80%9d%20which%20are%20also%20called%20edges.%20These%20pairs%20of%20points%20may%20have%20a%20distance%20associated%20with%20them%20in%20which%20case%20they%20are%20known%20as%20%e2%80%9cweighted%e2%80%9d.%0aGiven%20a%20graph%20with%20positive%20weights%20and%20a%20source%20%e2%80%9cvertex%e2%80%9d%20i.">
       <i class="fab fa-tumblr " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=%2fblog%2fposts%2fdijkstras_shortest_path_algorithm_intuition_for_proof_and_code_in_python%2f&t=Dijkstra%e2%80%99s%20Shortest%20Path%20Algorithm%3a%20Intuition%20for%20proof%20and%20code%20in%20Python%20">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=%2fposts%2fdijkstras_shortest_path_algorithm_intuition_for_proof_and_code_in_python%2f&t=Dijkstra%e2%80%99s%20Shortest%20Path%20Algorithm%3a%20Intuition%20for%20proof%20and%20code%20in%20Python%20">
       <i class="fab fa-hacker-news " aria-hidden="true"></i>
     </a>
   </li>
@@ -192,10 +192,10 @@ Given a graph with positive weights and a source “vertex” i."/>
             <i class="fas fa-tag"></i>
             
             
-            <a class="tag-link" href="/blog/tags/programming" rel="tag">programming</a>
+            <a class="tag-link" href="../../tags/programming" rel="tag">programming</a>
             
              ,  
-            <a class="tag-link" href="/blog/tags/algorithms" rel="tag">algorithms</a>
+            <a class="tag-link" href="../../tags/algorithms" rel="tag">algorithms</a>
             
         </div>
         
@@ -209,7 +209,7 @@ Given a graph with positive weights and a source “vertex” i."/>
 <p>A graph, for those who are unfamiliar or have forgotten, is just a collection of ordered pairs of “points” which are also called edges.  These pairs of points may have a distance associated with them in which case they are known as “weighted”.</p>
 <p>Given a graph with positive weights and a source “vertex” i.e starting point, we need to find the shortest path from that source vertex to all the other points.
 For example:</p>
-<p><img src="/1605531808/assets/image.png" alt="">From the figure, we can easily calculate the shortest path from <code>A</code> to all the other nodes. Shortest distance from <code>A</code> to <code>F</code> would be 3 since <code>A</code> to <code>C</code> is 1 and <code>C</code> to <code>F</code> is 2. Note that we can also get to <code>F</code> from <code>A</code> through <code>A -&gt; B -&gt; F</code> but while this is also a path, this is not the shortest.</p>
+<p><img src="../../1605531808/assets/image.png" alt="">From the figure, we can easily calculate the shortest path from <code>A</code> to all the other nodes. Shortest distance from <code>A</code> to <code>F</code> would be 3 since <code>A</code> to <code>C</code> is 1 and <code>C</code> to <code>F</code> is 2. Note that we can also get to <code>F</code> from <code>A</code> through <code>A -&gt; B -&gt; F</code> but while this is also a path, this is not the shortest.</p>
 <h2 id="intuition-for-the-proof">Intuition for the proof</h2>
 <p>I would strongly recommend you try to find the shortest path from <code>A</code> to all nodes using your own intuition first. This will make the following proof simpler to understand.</p>
 <p>Let’s take the same example as before. If we were to come up with a naive algorithm for this, what would we do? We could always calculate all possible paths from <code>A</code> to all other nodes and choose the smallest path for each. This is obviously way too slow. Let us try to use the fact that the distances are always positive.</p>
@@ -221,9 +221,9 @@ Let us move a step back and see how we can can get to <code>B</code>. From the l
 <p>Claim: This is the best way to get to <code>F</code>.
 Can any other intermediary node help us? What about <code>B</code>? That is certainly going to be above 3 if anything. No other node can help us here. This is because we have ruled out <code>B</code> and <code>F</code> happens to be the closest to <code>C</code>.
 By now you can see the strategy we are taking here, but lets make a couple of modifications to our example for better understanding.</p>
-<p><img src="/1605531808/assets/image%202.png" alt=""></p>
+<p><img src="../../1605531808/assets/image%202.png" alt=""></p>
 <p>In this situation, using the same reasoning we can show that shortest distance <code>A -&gt; C</code> is 1. But what about <code>F</code>? Can we really be sure that <code>A -&gt; F</code> is 3? We <em>could</em> do better by probably going through <code>A -&gt; B</code> and then somewhere else right? We haven’t explored that option. Hence for the moment we can only be sure shortest distance for  <code>A -&gt; B</code> is 2 and try to work from here.</p>
-<p><img src="/1605531808/assets/image%203.png" alt=""></p>
+<p><img src="../../1605531808/assets/image%203.png" alt=""></p>
 <p>Here, we can be sure of <code>A -&gt; C</code> and <code>A -&gt; F</code> using same strategy. But can we be sure of <code>A -&gt; B</code>? What if we use <code>F</code> as an intermediary node? <em>Maybe</em> <code>F</code> can go to a node <code>Z</code> with a weight .2 and <code>Z -&gt; B</code>  could be achieved with less than .1. We haven’t this explored yet.</p>
 <h2 id="strategy">Strategy</h2>
 <p>In simple words</p>
@@ -319,13 +319,13 @@ remaining_nodes <span style="color:#f92672">=</span> set(graph<span style="color
     <div id="nav-footer" style="display: none">
       <ul>
          
-          <li><a href="/blog/">Home</a></li>
+          <li><a href="../../">Home</a></li>
          
-          <li><a href="/blog/posts">Writings</a></li>
+          <li><a href="../../posts">Writings</a></li>
          
-          <li><a href="/blog/tags">Tags</a></li>
+          <li><a href="../../tags">Tags</a></li>
          
-          <li><a href="/blog/about">About</a></li>
+          <li><a href="../../about">About</a></li>
         
       </ul>
     </div>
@@ -350,57 +350,57 @@ remaining_nodes <span style="color:#f92672">=</span> set(graph<span style="color
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=%2fblog%2fposts%2fdijkstras_shortest_path_algorithm_intuition_for_proof_and_code_in_python%2f">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=%2fposts%2fdijkstras_shortest_path_algorithm_intuition_for_proof_and_code_in_python%2f">
       <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=%2fblog%2fposts%2fdijkstras_shortest_path_algorithm_intuition_for_proof_and_code_in_python%2f&text=Dijkstra%e2%80%99s%20Shortest%20Path%20Algorithm%3a%20Intuition%20for%20proof%20and%20code%20in%20Python%20">
+    <a class="icon" href="https://twitter.com/share?url=%2fposts%2fdijkstras_shortest_path_algorithm_intuition_for_proof_and_code_in_python%2f&text=Dijkstra%e2%80%99s%20Shortest%20Path%20Algorithm%3a%20Intuition%20for%20proof%20and%20code%20in%20Python%20">
       <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=%2fblog%2fposts%2fdijkstras_shortest_path_algorithm_intuition_for_proof_and_code_in_python%2f&title=Dijkstra%e2%80%99s%20Shortest%20Path%20Algorithm%3a%20Intuition%20for%20proof%20and%20code%20in%20Python%20">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=%2fposts%2fdijkstras_shortest_path_algorithm_intuition_for_proof_and_code_in_python%2f&title=Dijkstra%e2%80%99s%20Shortest%20Path%20Algorithm%3a%20Intuition%20for%20proof%20and%20code%20in%20Python%20">
       <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=%2fblog%2fposts%2fdijkstras_shortest_path_algorithm_intuition_for_proof_and_code_in_python%2f&is_video=false&description=Dijkstra%e2%80%99s%20Shortest%20Path%20Algorithm%3a%20Intuition%20for%20proof%20and%20code%20in%20Python%20">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=%2fposts%2fdijkstras_shortest_path_algorithm_intuition_for_proof_and_code_in_python%2f&is_video=false&description=Dijkstra%e2%80%99s%20Shortest%20Path%20Algorithm%3a%20Intuition%20for%20proof%20and%20code%20in%20Python%20">
       <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=Dijkstra%e2%80%99s%20Shortest%20Path%20Algorithm%3a%20Intuition%20for%20proof%20and%20code%20in%20Python%20&body=Check out this article: %2fblog%2fposts%2fdijkstras_shortest_path_algorithm_intuition_for_proof_and_code_in_python%2f">
+    <a class="icon" href="mailto:?subject=Dijkstra%e2%80%99s%20Shortest%20Path%20Algorithm%3a%20Intuition%20for%20proof%20and%20code%20in%20Python%20&body=Check out this article: %2fposts%2fdijkstras_shortest_path_algorithm_intuition_for_proof_and_code_in_python%2f">
       <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=%2fblog%2fposts%2fdijkstras_shortest_path_algorithm_intuition_for_proof_and_code_in_python%2f&title=Dijkstra%e2%80%99s%20Shortest%20Path%20Algorithm%3a%20Intuition%20for%20proof%20and%20code%20in%20Python%20">
+    <a class="icon" href="https://getpocket.com/save?url=%2fposts%2fdijkstras_shortest_path_algorithm_intuition_for_proof_and_code_in_python%2f&title=Dijkstra%e2%80%99s%20Shortest%20Path%20Algorithm%3a%20Intuition%20for%20proof%20and%20code%20in%20Python%20">
       <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=%2fblog%2fposts%2fdijkstras_shortest_path_algorithm_intuition_for_proof_and_code_in_python%2f&title=Dijkstra%e2%80%99s%20Shortest%20Path%20Algorithm%3a%20Intuition%20for%20proof%20and%20code%20in%20Python%20">
+    <a class="icon" href="http://reddit.com/submit?url=%2fposts%2fdijkstras_shortest_path_algorithm_intuition_for_proof_and_code_in_python%2f&title=Dijkstra%e2%80%99s%20Shortest%20Path%20Algorithm%3a%20Intuition%20for%20proof%20and%20code%20in%20Python%20">
       <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=%2fblog%2fposts%2fdijkstras_shortest_path_algorithm_intuition_for_proof_and_code_in_python%2f&title=Dijkstra%e2%80%99s%20Shortest%20Path%20Algorithm%3a%20Intuition%20for%20proof%20and%20code%20in%20Python%20">
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=%2fposts%2fdijkstras_shortest_path_algorithm_intuition_for_proof_and_code_in_python%2f&title=Dijkstra%e2%80%99s%20Shortest%20Path%20Algorithm%3a%20Intuition%20for%20proof%20and%20code%20in%20Python%20">
       <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://digg.com/submit?url=%2fblog%2fposts%2fdijkstras_shortest_path_algorithm_intuition_for_proof_and_code_in_python%2f&title=Dijkstra%e2%80%99s%20Shortest%20Path%20Algorithm%3a%20Intuition%20for%20proof%20and%20code%20in%20Python%20">
+    <a class="icon" href="http://digg.com/submit?url=%2fposts%2fdijkstras_shortest_path_algorithm_intuition_for_proof_and_code_in_python%2f&title=Dijkstra%e2%80%99s%20Shortest%20Path%20Algorithm%3a%20Intuition%20for%20proof%20and%20code%20in%20Python%20">
       <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=%2fblog%2fposts%2fdijkstras_shortest_path_algorithm_intuition_for_proof_and_code_in_python%2f&name=Dijkstra%e2%80%99s%20Shortest%20Path%20Algorithm%3a%20Intuition%20for%20proof%20and%20code%20in%20Python%20&description=What%20is%20shortest%20path%3f%20If%20you%20are%20already%20familiar%20with%20what%20Dijkstra%e2%80%99s%20shortest%20path%20algorithm%20intends%20to%20do%20then%20skip%20this%20section.%0aA%20graph%2c%20for%20those%20who%20are%20unfamiliar%20or%20have%20forgotten%2c%20is%20just%20a%20collection%20of%20ordered%20pairs%20of%20%e2%80%9cpoints%e2%80%9d%20which%20are%20also%20called%20edges.%20These%20pairs%20of%20points%20may%20have%20a%20distance%20associated%20with%20them%20in%20which%20case%20they%20are%20known%20as%20%e2%80%9cweighted%e2%80%9d.%0aGiven%20a%20graph%20with%20positive%20weights%20and%20a%20source%20%e2%80%9cvertex%e2%80%9d%20i.">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=%2fposts%2fdijkstras_shortest_path_algorithm_intuition_for_proof_and_code_in_python%2f&name=Dijkstra%e2%80%99s%20Shortest%20Path%20Algorithm%3a%20Intuition%20for%20proof%20and%20code%20in%20Python%20&description=What%20is%20shortest%20path%3f%20If%20you%20are%20already%20familiar%20with%20what%20Dijkstra%e2%80%99s%20shortest%20path%20algorithm%20intends%20to%20do%20then%20skip%20this%20section.%0aA%20graph%2c%20for%20those%20who%20are%20unfamiliar%20or%20have%20forgotten%2c%20is%20just%20a%20collection%20of%20ordered%20pairs%20of%20%e2%80%9cpoints%e2%80%9d%20which%20are%20also%20called%20edges.%20These%20pairs%20of%20points%20may%20have%20a%20distance%20associated%20with%20them%20in%20which%20case%20they%20are%20known%20as%20%e2%80%9cweighted%e2%80%9d.%0aGiven%20a%20graph%20with%20positive%20weights%20and%20a%20source%20%e2%80%9cvertex%e2%80%9d%20i.">
       <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=%2fblog%2fposts%2fdijkstras_shortest_path_algorithm_intuition_for_proof_and_code_in_python%2f&t=Dijkstra%e2%80%99s%20Shortest%20Path%20Algorithm%3a%20Intuition%20for%20proof%20and%20code%20in%20Python%20">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=%2fposts%2fdijkstras_shortest_path_algorithm_intuition_for_proof_and_code_in_python%2f&t=Dijkstra%e2%80%99s%20Shortest%20Path%20Algorithm%3a%20Intuition%20for%20proof%20and%20code%20in%20Python%20">
       <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
     </a>
   </li>
@@ -432,13 +432,13 @@ remaining_nodes <span style="color:#f92672">=</span> set(graph<span style="color
     <nav>
       <ul>
          
-        <li><a href="/blog/">Home</a></li>
+        <li><a href="../../">Home</a></li>
          
-        <li><a href="/blog/posts">Writings</a></li>
+        <li><a href="../../posts">Writings</a></li>
          
-        <li><a href="/blog/tags">Tags</a></li>
+        <li><a href="../../tags">Tags</a></li>
          
-        <li><a href="/blog/about">About</a></li>
+        <li><a href="../../about">About</a></li>
         
       </ul>
     </nav>
@@ -449,9 +449,9 @@ remaining_nodes <span style="color:#f92672">=</span> set(graph<span style="color
   </div>
 </body>
 
-<link rel="stylesheet" href=/blog/lib/font-awesome/css/all.min.css>
-<script src=/blog/lib/jquery/jquery.min.js></script>
-<script src=/blog/js/main.js></script>
+<link rel="stylesheet" href=../../lib/font-awesome/css/all.min.css>
+<script src=../../lib/jquery/jquery.min.js></script>
+<script src=../../js/main.js></script>
 
 
 

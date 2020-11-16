@@ -3,52 +3,52 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/blog/tags/blogging/</loc>
+    <loc>/tags/blogging/</loc>
     <lastmod>2020-11-16T15:02:25+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/tags/ipad/</loc>
+    <loc>/tags/ipad/</loc>
     <lastmod>2020-11-16T15:02:25+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/</loc>
+    <loc>/</loc>
     <lastmod>2020-11-16T15:02:25+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/posts/</loc>
+    <loc>/posts/</loc>
     <lastmod>2020-11-16T15:02:25+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/tags/</loc>
+    <loc>/tags/</loc>
     <lastmod>2020-11-16T15:02:25+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/posts/workflow_for_publishing_blogs_from_ipad_using_bear_and_hugo/</loc>
+    <loc>/posts/workflow_for_publishing_blogs_from_ipad_using_bear_and_hugo/</loc>
     <lastmod>2020-11-16T15:02:25+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/tags/algorithms/</loc>
+    <loc>/tags/algorithms/</loc>
     <lastmod>2020-11-16T13:03:28+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/posts/dijkstras_shortest_path_algorithm_intuition_for_proof_and_code_in_python/</loc>
+    <loc>/posts/dijkstras_shortest_path_algorithm_intuition_for_proof_and_code_in_python/</loc>
     <lastmod>2020-11-16T13:03:28+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/tags/programming/</loc>
+    <loc>/tags/programming/</loc>
     <lastmod>2020-11-16T13:03:28+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/categories/</loc>
+    <loc>/categories/</loc>
   </url>
   
 </urlset>

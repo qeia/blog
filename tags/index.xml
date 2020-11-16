@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on My blogs on random things</title>
-    <link>/blog/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on My blogs on random things</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>You</copyright>
-    <lastBuildDate>Mon, 16 Nov 2020 15:02:25 +0000</lastBuildDate><atom:link href="/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 16 Nov 2020 15:02:25 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>blogging</title>
-      <link>/blog/tags/blogging/</link>
+      <link>/tags/blogging/</link>
       <pubDate>Mon, 16 Nov 2020 15:02:25 +0000</pubDate>
       
-      <guid>/blog/tags/blogging/</guid>
+      <guid>/tags/blogging/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ipad</title>
-      <link>/blog/tags/ipad/</link>
+      <link>/tags/ipad/</link>
       <pubDate>Mon, 16 Nov 2020 15:02:25 +0000</pubDate>
       
-      <guid>/blog/tags/ipad/</guid>
+      <guid>/tags/ipad/</guid>
       <description></description>
     </item>
     
     <item>
       <title>algorithms</title>
-      <link>/blog/tags/algorithms/</link>
+      <link>/tags/algorithms/</link>
       <pubDate>Mon, 16 Nov 2020 13:03:28 +0000</pubDate>
       
-      <guid>/blog/tags/algorithms/</guid>
+      <guid>/tags/algorithms/</guid>
       <description></description>
     </item>
     
     <item>
       <title>programming</title>
-      <link>/blog/tags/programming/</link>
+      <link>/tags/programming/</link>
       <pubDate>Mon, 16 Nov 2020 13:03:28 +0000</pubDate>
       
-      <guid>/blog/tags/programming/</guid>
+      <guid>/tags/programming/</guid>
       <description></description>
     </item>
     
