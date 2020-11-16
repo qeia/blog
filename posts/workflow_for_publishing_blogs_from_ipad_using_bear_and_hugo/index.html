@@ -52,13 +52,13 @@
     <span id="nav">
       <ul>
          
-        <li><a href="../../blog/">Home</a></li>
+        <li><a href="/blog/">Home</a></li>
          
-        <li><a href="../../blog/posts">Writings</a></li>
+        <li><a href="/blog/posts">Writings</a></li>
          
-        <li><a href="../../blog/tags">Tags</a></li>
+        <li><a href="/blog/tags">Tags</a></li>
          
-        <li><a href="../../blog/about">About</a></li>
+        <li><a href="/blog/about">About</a></li>
         
       </ul>
     </span>
@@ -194,10 +194,10 @@
             <i class="fas fa-tag"></i>
             
             
-            <a class="tag-link" href="../../blog/tags/ipad" rel="tag">ipad</a>
+            <a class="tag-link" href="/blog/tags/ipad" rel="tag">ipad</a>
             
              ,  
-            <a class="tag-link" href="../../blog/tags/blogging" rel="tag">blogging</a>
+            <a class="tag-link" href="/blog/tags/blogging" rel="tag">blogging</a>
             
         </div>
         
@@ -208,7 +208,7 @@
     <div class="content" itemprop="articleBody">
       <p>Ever since I bought myself an iPad mini, I wanted to use it more and more trying my hardest to justify the purchase. But that is not to say it is a bad device or anything, but I <em>could</em> just blog normally using my laptop. But&hellip; that’s just not as interesting. So here is a slightly contrived way to blog directly from iPad using the Bear app, a toy server and Github pages.</p>
 <h2 id="tldr">TL;DR</h2>
-<p><img src="../../1605536964/assets/image.png" alt="">
+<p><img src="/1605536964/assets/image.png" alt="">
 I use Bear app for iPadOS for writing the blog in markdown and export the “Textbundle” file to a Linode box using ssh (more on this later) and then parse and clean the Textbundle file and push static files to Github. I host the website using Github pages.</p>
 <h2 id="alternatives">Alternatives</h2>
 <p>If I <em>had</em> to use my iPad for blogging, I found these alternatives during my research</p>
@@ -223,7 +223,7 @@ I use Bear app for iPadOS for writing the blog in markdown and export the “Tex
 <h3 id="shortcuts-app-and-ssh">Shortcuts app and SSH</h3>
 <p>The Bear app is amazing in that it can export to the Textbundle format. Which is essentially a markdown file bundled with the assets. Next, I needed to use this file and do some parsing.</p>
 <p>It took me a while to realise this but you can actually create a shortcut in the shortcuts app that accepts a file and then transfer it to your server. So I got the cheapest box from Linode and tested this shortcut. Once you have created this shortcut, it will appear in the <code>export</code> section in Bear app (under three dots).</p>
-<p><img src="../../1605536964/assets/image%202.png" alt=""></p>
+<p><img src="/1605536964/assets/image%202.png" alt=""></p>
 <p>.</p>
 <h3 id="parsing-textbundle">Parsing Textbundle</h3>
 <p>I would have really loved some out of the box textbundle support for blogging but unfortunately I could not find any. So I decided to write some trivial Python code to split the Textbundle file into the Markdown and Assets folders for use in Hugo.</p>
@@ -258,7 +258,7 @@ We need to be careful with the regex though, we <strong>have</strong> to do it l
 </code></pre></div><p>I know there’s probably a better way to do this, but I just couldn’t find it. This works well enough though.
 I also wrote code to move the <code>assets</code> folder into the <code>static</code> folder for Hugo and some trivial <code>git commit</code>  and <code>git push</code>  for Github static pages, but I’ll omit it for brevity.</p>
 <h3 id="thats-it">That’s it!</h3>
-<p><img src="../../1605536964/assets/image%203.png" alt=""></p>
+<p><img src="/1605536964/assets/image%203.png" alt=""></p>
 <p>Just press the shortcut (“bear test” for me, we are still in development phase after all!) and we are done!</p>
 <h2 id="improvements">Improvements</h2>
 <p>This experiment could work without renting a server but I really wanted the root terminal access for experimenting and exploring. I’ll figure out how to use Github actions in the future and maybe update this post. Could save a few bucks through this. Nevertheless, a toy server can come to use sometime, who knows!</p>
@@ -303,13 +303,13 @@ I also wrote code to move the <code>assets</code> folder into the <code>static</
     <div id="nav-footer" style="display: none">
       <ul>
          
-          <li><a href="../../blog/">Home</a></li>
+          <li><a href="/blog/">Home</a></li>
          
-          <li><a href="../../blog/posts">Writings</a></li>
+          <li><a href="/blog/posts">Writings</a></li>
          
-          <li><a href="../../blog/tags">Tags</a></li>
+          <li><a href="/blog/tags">Tags</a></li>
          
-          <li><a href="../../blog/about">About</a></li>
+          <li><a href="/blog/about">About</a></li>
         
       </ul>
     </div>
@@ -422,13 +422,13 @@ I also wrote code to move the <code>assets</code> folder into the <code>static</
     <nav>
       <ul>
          
-        <li><a href="../../blog/">Home</a></li>
+        <li><a href="/blog/">Home</a></li>
          
-        <li><a href="../../blog/posts">Writings</a></li>
+        <li><a href="/blog/posts">Writings</a></li>
          
-        <li><a href="../../blog/tags">Tags</a></li>
+        <li><a href="/blog/tags">Tags</a></li>
          
-        <li><a href="../../blog/about">About</a></li>
+        <li><a href="/blog/about">About</a></li>
         
       </ul>
     </nav>
@@ -439,9 +439,9 @@ I also wrote code to move the <code>assets</code> folder into the <code>static</
   </div>
 </body>
 
-<link rel="stylesheet" href=../../blog/lib/font-awesome/css/all.min.css>
-<script src=../../blog/lib/jquery/jquery.min.js></script>
-<script src=../../blog/js/main.js></script>
+<link rel="stylesheet" href=/blog/lib/font-awesome/css/all.min.css>
+<script src=/blog/lib/jquery/jquery.min.js></script>
+<script src=/blog/js/main.js></script>
 
 
 
