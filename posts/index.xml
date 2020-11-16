@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Even - A super concise theme for Hugo</title>
+    <title>Posts on My blogs on random things</title>
     <link>https://qeia.github.io/blog/posts/</link>
-    <description>Recent content in Posts on Even - A super concise theme for Hugo</description>
+    <description>Recent content in Posts on My blogs on random things</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Mon, 16 Nov 2020 11:24:57 +0000</lastBuildDate><atom:link href="https://qeia.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <copyright>You</copyright>
+    <lastBuildDate>Mon, 16 Nov 2020 13:03:28 +0000</lastBuildDate><atom:link href="https://qeia.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Dijkstra’s Shortest Path Algorithm: Intuition for proof and code in Python </title>
-      <link>https://qeia.github.io/blog/posts/1605525897/</link>
-      <pubDate>Mon, 16 Nov 2020 11:24:57 +0000</pubDate>
+      <link>https://qeia.github.io/blog/posts/dijkstras_shortest_path_algorithm_intuition_for_proof_and_code_in_python/</link>
+      <pubDate>Mon, 16 Nov 2020 13:03:28 +0000</pubDate>
       
-      <guid>https://qeia.github.io/blog/posts/1605525897/</guid>
+      <guid>https://qeia.github.io/blog/posts/dijkstras_shortest_path_algorithm_intuition_for_proof_and_code_in_python/</guid>
       <description>What is shortest path? If you are already familiar with what Dijkstra’s shortest path algorithm intends to do then skip this section.
 A graph, for those who are unfamiliar or have forgotten, is just a collection of ordered pairs of “points” which are also called edges. These pairs of points may have a distance associated with them in which case they are known as “weighted”.
 Given a graph with positive weights and a source “vertex” i.</description>

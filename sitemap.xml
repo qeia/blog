@@ -1,37 +1,49 @@
-<?xml-stylesheet type="text/xsl" href="https://qeia.github.io/blog/sitemap.xsl"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://qeia.github.io/blog/posts/1605525897/</loc>
-    <lastmod>2020-11-16T11:24:57+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <loc>https://qeia.github.io/blog/tags/algorithms/</loc>
+    <lastmod>2020-11-16T13:03:28+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://qeia.github.io/blog/posts/dijkstras_shortest_path_algorithm_intuition_for_proof_and_code_in_python/</loc>
+    <lastmod>2020-11-16T13:03:28+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://qeia.github.io/blog/</loc>
-    <lastmod>2020-11-16T11:24:57+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <lastmod>2020-11-16T13:03:28+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://qeia.github.io/blog/posts/</loc>
-    <lastmod>2020-11-16T11:24:57+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <lastmod>2020-11-16T13:03:28+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://qeia.github.io/blog/categories/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <loc>https://qeia.github.io/blog/tags/programming/</loc>
+    <lastmod>2020-11-16T13:03:28+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://qeia.github.io/blog/tags/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <lastmod>2020-11-16T13:03:28+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://qeia.github.io/blog/post/</loc>
+    <lastmod>2020-11-16T11:38:48+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://qeia.github.io/blog/post/stuff2/</loc>
+    <lastmod>2020-11-16T11:38:48+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://qeia.github.io/blog/categories/</loc>
   </url>
   
 </urlset>
