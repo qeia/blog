@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blogging on My blogs on random things</title>
+    <link>https://qeia.github.io/blog/tags/blogging/</link>
+    <description>Recent content in blogging on My blogs on random things</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>You</copyright>
+    <lastBuildDate>Mon, 16 Nov 2020 14:29:24 +0000</lastBuildDate><atom:link href="https://qeia.github.io/blog/tags/blogging/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Workflow for Publishing Blogs From iPad using Bear and Hugo </title>
+      <link>https://qeia.github.io/blog/posts/workflow_for_publishing_blogs_from_ipad_using_bear_and_hugo/</link>
+      <pubDate>Mon, 16 Nov 2020 14:29:24 +0000</pubDate>
+      
+      <guid>https://qeia.github.io/blog/posts/workflow_for_publishing_blogs_from_ipad_using_bear_and_hugo/</guid>
+      <description>Ever since I bought myself an iPad mini, I wanted to use it more and more trying my hardest to justify the purchase. But that is not to say it is a bad device or anything, but I could just blog normally using my laptop. But&amp;hellip; that’s just not as interesting. So here is a slightly contrived way to blog directly from iPad using the Bear app, a toy server and Github pages.</description>
+    </item>
+    
+  </channel>
+</rss>

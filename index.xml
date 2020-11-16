@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>You</copyright>
-    <lastBuildDate>Mon, 16 Nov 2020 13:03:28 +0000</lastBuildDate><atom:link href="https://qeia.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 16 Nov 2020 14:29:24 +0000</lastBuildDate><atom:link href="https://qeia.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Workflow for Publishing Blogs From iPad using Bear and Hugo </title>
+      <link>https://qeia.github.io/blog/posts/workflow_for_publishing_blogs_from_ipad_using_bear_and_hugo/</link>
+      <pubDate>Mon, 16 Nov 2020 14:29:24 +0000</pubDate>
+      
+      <guid>https://qeia.github.io/blog/posts/workflow_for_publishing_blogs_from_ipad_using_bear_and_hugo/</guid>
+      <description>Ever since I bought myself an iPad mini, I wanted to use it more and more trying my hardest to justify the purchase. But that is not to say it is a bad device or anything, but I could just blog normally using my laptop. But&amp;hellip; that’s just not as interesting. So here is a slightly contrived way to blog directly from iPad using the Bear app, a toy server and Github pages.</description>
+    </item>
+    
     <item>
       <title>Dijkstra’s Shortest Path Algorithm: Intuition for proof and code in Python </title>
       <link>https://qeia.github.io/blog/posts/dijkstras_shortest_path_algorithm_intuition_for_proof_and_code_in_python/</link>
