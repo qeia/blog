@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Dijkstra’s Shortest Path Algorithm: Intuition for proof and code in Python  - Even - A super concise theme for Hugo</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Siddharth Iyer" /><meta name="description" content="What is shortest path? If you are already familiar with what Dijkstra’s shortest path algorithm intends to do then skip this section.
+A graph, for those who are unfamiliar or have forgotten, is just a collection of ordered pairs of “points” which are also called edges. These pairs of points may have a distance associated with them in which case they are known as “weighted”.
+Given a graph with positive weights and a source “vertex” i." /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.78.2 with theme even" />
+
+
+<link rel="canonical" href="https://qeia.github.io/blog/posts/1605525897/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/blog/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/blog/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/blog/favicon-16x16.png">
+<link rel="manifest" href="/blog/manifest.json">
+<link rel="mask-icon" href="/blog/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/blog/sass/main.min.7ed208c8ba5dcbdbce4d54bf752a698f7ee7cc4aa7a504f82263422795674113.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+<link rel="stylesheet" href="/blog/css/pre.css">
+
+
+<meta property="og:title" content="Dijkstra’s Shortest Path Algorithm: Intuition for proof and code in Python " />
+<meta property="og:description" content="What is shortest path? If you are already familiar with what Dijkstra’s shortest path algorithm intends to do then skip this section.
+A graph, for those who are unfamiliar or have forgotten, is just a collection of ordered pairs of “points” which are also called edges. These pairs of points may have a distance associated with them in which case they are known as “weighted”.
+Given a graph with positive weights and a source “vertex” i." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://qeia.github.io/blog/posts/1605525897/" />
+<meta property="article:published_time" content="2020-11-16T11:24:57+00:00" />
+<meta property="article:modified_time" content="2020-11-16T11:24:57+00:00" />
+<meta itemprop="name" content="Dijkstra’s Shortest Path Algorithm: Intuition for proof and code in Python ">
+<meta itemprop="description" content="What is shortest path? If you are already familiar with what Dijkstra’s shortest path algorithm intends to do then skip this section.
+A graph, for those who are unfamiliar or have forgotten, is just a collection of ordered pairs of “points” which are also called edges. These pairs of points may have a distance associated with them in which case they are known as “weighted”.
+Given a graph with positive weights and a source “vertex” i.">
+<meta itemprop="datePublished" content="2020-11-16T11:24:57+00:00" />
+<meta itemprop="dateModified" content="2020-11-16T11:24:57+00:00" />
+<meta itemprop="wordCount" content="1205">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Dijkstra’s Shortest Path Algorithm: Intuition for proof and code in Python "/>
+<meta name="twitter:description" content="What is shortest path? If you are already familiar with what Dijkstra’s shortest path algorithm intends to do then skip this section.
+A graph, for those who are unfamiliar or have forgotten, is just a collection of ordered pairs of “points” which are also called edges. These pairs of points may have a distance associated with them in which case they are known as “weighted”.
+Given a graph with positive weights and a source “vertex” i."/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/blog/" class="logo">Even</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/blog/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/blog/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/blog/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/blog/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/blog/" class="logo">Even</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/blog/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/blog/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/blog/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/blog/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+  <div class="post-content">
+    <h2 id="what-is-shortest-path">What is shortest path?</h2>
+<p>If you are already familiar with what Dijkstra’s shortest path algorithm intends to do then skip this section.</p>
+<p>A graph, for those who are unfamiliar or have forgotten, is just a collection of ordered pairs of “points” which are also called edges.  These pairs of points may have a distance associated with them in which case they are known as “weighted”.</p>
+<p>Given a graph with positive weights and a source “vertex” i.e starting point, we need to find the shortest path from that source vertex to all the other points.<br>
+For example:</p>
+<p><img src="/1605525897/assets/image.png" alt="">From the figure, we can easily calculate the shortest path from <code>A</code> to all the other nodes. Shortest distance from <code>A</code> to <code>F</code> would be 3 since <code>A</code> to <code>C</code> is 1 and <code>C</code> to <code>F</code> is 2. Note that we can also get to <code>F</code> from <code>A</code> through <code>A -&gt; B -&gt; F</code> but while this is also a path, this is not the shortest.</p>
+<h2 id="intuition-for-the-proof">Intuition for the proof</h2>
+<p>I would strongly recommend you try to find the shortest path from <code>A</code> to all nodes using your own intuition first. This will make the following proof simpler to understand.</p>
+<p>Let’s take the same example as before. If we were to come up with a naive algorithm for this, what would we do? We could always calculate all possible paths from <code>A</code> to all other nodes and choose the smallest path for each. This is obviously way too slow. Let us try to use the fact that the distances are always positive.</p>
+<p>Claim: Shortest distance from <code>A</code> to <code>C</code> is necessarily 1.<br>
+Why not? Can we reach <code>C</code> from anywhere else? If we go <code>A -&gt; B -&gt; C</code>  we will clearly 9 units to reach.  Since <code>C</code> is the closest neighbour of <code>A</code> and there are no negative distances, it follows that we cannot do any better than 1 unit. If there were a better path, it should start from a node that is <strong>closer than 1 unit to A</strong> (lets assume this is <code>X</code>) and <code>X</code> should be directly or indirectly connected to <code>C</code> with a weight that when summed with <code>A -&gt; X</code> distance should be less than 1 (if negative distances were allowed, this would not be the case).</p>
+<p>Ok, now we have established that we cannot do better than 1 for <code>C</code> . This is why Dijkstra’s Algorithm is called “<strong>greedy</strong>” since we know about <code>C</code> for sure now. This was simple enough, now what about the other nodes?<br>
+Let us move a step back and see how we can can get to <code>B</code>. From the looks of it, <code>A -&gt; B</code> can be 3, but can we do better? We <em>could</em>, given that there is some way to get to a node, lets say <code>Y</code> directly or indirectly with a distance of  <code>w1</code> and from <code>Y</code> to <code>B</code>  with a distance of <code>w2</code> such that <code>w2 + w1</code> is less than 3. The computer, which is reading our code right now does not know that some <code>Y</code> can exist since all nodes haven’t been touched yet.</p>
+<p>For now, lets just see how well we can do if we use <code>C</code> as an intermediate node. From <code>C</code> it looks like we can reach <code>F</code>  with total distance of 3.</p>
+<p>Claim: This is the best way to get to <code>F</code>.<br>
+Can any other intermediary node help us? What about <code>B</code>? That is certainly going to be above 3 if anything. No other node can help us here. This is because we have ruled out <code>B</code> and <code>F</code> happens to be the closest to <code>C</code>.<br>
+By now you can see the strategy we are taking here, but lets make a couple of modifications to our example for better understanding.</p>
+<p><img src="/1605525897/assets/image%202.png" alt=""></p>
+<p>In this situation, using the same reasoning we can show that shortest distance <code>A -&gt; C</code> is 1. But what about <code>F</code>? Can we really be sure that <code>A -&gt; F</code> is 3? We <em>could</em> do better by probably going through <code>A -&gt; B</code> and then somewhere else right? We haven’t explored that option. Hence for the moment we can only be sure shortest distance for  <code>A -&gt; B</code> is 2 and try to work from here.</p>
+<p><img src="/1605525897/assets/image%203.png" alt=""></p>
+<p>Here, we can be sure of <code>A -&gt; C</code> and <code>A -&gt; F</code> using same strategy. But can we be sure of <code>A -&gt; B</code>? What if we use <code>F</code> as an intermediary node? <em>Maybe</em> <code>F</code> can go to a node <code>Z</code> with a weight .2 and <code>Z -&gt; B</code>  could be achieved with less than .1. We haven’t this explored yet.</p>
+<h2 id="strategy">Strategy</h2>
+<p>In simple words</p>
+<ol>
+<li>We maintain a map of tentative shortest distances from source vertex to every other vertex and initialise all these values as infinity. (key is the vertex and value is the shortest distance from source to that vertex)</li>
+<li>We start with the source vertex and update the map to each of its immediate neighbours.</li>
+<li>This is the crucial part: from the map, we choose the vertex with smallest distance and decide for sure that this value is going to it for this vertex and we aren’t going to change its value henceforth. Let that vertex be <code>X</code></li>
+<li>We update all of <code>X</code>’s neighbours’ distances in the map considering <code>X</code> as the intermediate vertex. Obviously we update <strong>only if</strong> after updating we get a shorter distance for a particular neighbour.</li>
+<li>We repeat 3 &amp; 4 until we are “sure” about all vertices. Note that we choose the vertex with the smallest tentative distance from <strong>source to that vertex</strong>.</li>
+</ol>
+<h2 id="code">Code</h2>
+<p>Let the graph <code>graph</code> be a dictionary represented like this:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+	<span class="err">A1:</span> <span class="err">[</span>
+		<span class="err">(A2,</span> <span class="err">5),</span>
+		<span class="err">(A3,</span> <span class="err">2)</span>
+	<span class="err">],</span>
+	<span class="err">A2:</span> <span class="err">[</span>
+		<span class="err">(A4,</span> <span class="err">2)</span>
+	<span class="err">]</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>The code:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="c1">#graph is the dictionary that holds graph information</span>
+<span class="c1">#source is the source vertex</span>
+
+<span class="c1">#initialising all tentative shortest distances to infinity</span>
+<span class="n">distances</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="k">for</span> <span class="n">node</span> <span class="ow">in</span> <span class="n">graph</span><span class="p">:</span>
+	<span class="n">distances</span><span class="p">[</span><span class="n">node</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="err">‘</span><span class="n">inf</span><span class="err">’</span><span class="p">)</span>
+<span class="n">distances</span><span class="p">[</span><span class="n">source</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="n">current_node</span> <span class="o">=</span> <span class="bp">None</span> <span class="c1">#this would be the vertex used to update neighbours </span>
+<span class="n">remaining_nodes</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">graph</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+
+<span class="c1">#method to get a node from remaining nodes with least distance from source </span>
+<span class="c1">#do not worry if this looks too complex, its just picking the key (that is present in remaining_nodes) with the least value from the “distances” dictionary</span>
+
+<span class="k">def</span> <span class="nf">getNearestRemainingNode</span><span class="p">(</span><span class="n">distances</span><span class="p">,</span> <span class="n">remaining_nodes</span><span class="p">):</span>
+    <span class="n">smallest_edge</span> <span class="o">=</span> <span class="nb">min</span><span class="p">([</span><span class="n">d</span> <span class="k">if</span> <span class="n">d</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="ow">in</span> <span class="n">remaining_nodes</span> <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">distances</span><span class="o">.</span><span class="n">items</span><span class="p">()],</span> <span class="n">key</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+	<span class="k">return</span> <span class="n">smallest_edge</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+<span class="k">while</span> <span class="n">remaining_nodes</span><span class="p">:</span>
+	<span class="n">current_node</span> <span class="o">=</span> <span class="n">getNearestRemainingNode</span><span class="p">(</span><span class="n">distances</span><span class="p">,</span> <span class="n">remaining_nodes</span><span class="p">)</span> 
+	<span class="c1">#in the first iteration, the source vertex would be picked for current_node</span>
+	<span class="n">current_distance</span> <span class="o">=</span> <span class="n">distances</span><span class="p">[</span><span class="n">current_node</span><span class="p">]</span>
+	<span class="n">remaining_nodes</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">current_node</span><span class="p">)</span> <span class="c1">#we are sure of this node now</span>
+	<span class="c1">#updating all its neighbours </span>
+	<span class="k">for</span> <span class="n">nbr_vertex</span><span class="p">,</span> <span class="n">nbr_distance</span> <span class="ow">in</span> <span class="n">graph</span><span class="p">[</span><span class="n">current_node</span><span class="p">]:</span>
+		<span class="n">dist_using_current</span> <span class="o">=</span> <span class="n">nbr_distance</span> <span class="o">+</span> <span class="n">current_distance</span>
+		<span class="k">if</span>  <span class="n">dist_using_current</span> <span class="o">&lt;</span> <span class="n">distances</span><span class="p">[</span><span class="n">nbr_vertex</span><span class="p">]:</span>
+			<span class="n">distances</span><span class="p">[</span><span class="n">nbr_vertex</span><span class="p">]</span> <span class="o">=</span> <span class="n">dist_using_current</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">distances</span><span class="p">)</span> 
+</code></pre></td></tr></table>
+</div>
+</div><p>Clearly the current algorithm is quadratic in complexity. We calculate shortest edge for almost all the nodes in each iteration. We could reduce this using a min heap but that is left as an exercise for the reader 😃. Once you understand this part, incorporating a heap would not be too hard.</p>
+
+  </div>
+</article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:your@email.com" class="iconfont icon-email" title="email"></a>
+      <a href="http://localhost:1313" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="http://localhost:1313" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="http://localhost:1313" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="http://localhost:1313" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="http://localhost:1313" class="iconfont icon-google" title="google"></a>
+      <a href="http://localhost:1313" class="iconfont icon-github" title="github"></a>
+      <a href="http://localhost:1313" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="http://localhost:1313" class="iconfont icon-douban" title="douban"></a>
+      <a href="http://localhost:1313" class="iconfont icon-pocket" title="pocket"></a>
+      <a href="http://localhost:1313" class="iconfont icon-tumblr" title="tumblr"></a>
+      <a href="http://localhost:1313" class="iconfont icon-instagram" title="instagram"></a>
+      <a href="http://localhost:1313" class="iconfont icon-gitlab" title="gitlab"></a>
+      <a href="http://localhost:1313" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="https://qeia.github.io/blog/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2017 - 
+    2020<span class="heart"><i class="iconfont icon-heart"></i></span><span>Siddharth Iyer</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/blog/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>
