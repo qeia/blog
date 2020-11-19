@@ -7,11 +7,11 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>You</copyright>
-    <lastBuildDate>Mon, 16 Nov 2020 15:13:35 +0000</lastBuildDate><atom:link href="/blog/tags/algorithms/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 19 Nov 2020 10:35:05 +0000</lastBuildDate><atom:link href="/blog/tags/algorithms/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Dijkstra’s Shortest Path Algorithm: Intuition for proof and code in Python </title>
       <link>/blog/posts/dijkstras_shortest_path_algorithm_intuition_for_proof_and_code_in_python/</link>
-      <pubDate>Mon, 16 Nov 2020 15:13:35 +0000</pubDate>
+      <pubDate>Thu, 19 Nov 2020 10:35:05 +0000</pubDate>
       
       <guid>/blog/posts/dijkstras_shortest_path_algorithm_intuition_for_proof_and_code_in_python/</guid>
       <description>What is shortest path? If you are already familiar with what Dijkstra’s shortest path algorithm intends to do then skip this section.

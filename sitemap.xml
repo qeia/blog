@@ -3,27 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/blog/tags/algorithms/</loc>
+    <lastmod>2020-11-19T10:35:05+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/dijkstras_shortest_path_algorithm_intuition_for_proof_and_code_in_python/</loc>
+    <lastmod>2020-11-19T10:35:05+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/</loc>
+    <lastmod>2020-11-19T10:35:05+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/</loc>
+    <lastmod>2020-11-19T10:35:05+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/tags/programming/</loc>
+    <lastmod>2020-11-19T10:35:05+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/tags/</loc>
+    <lastmod>2020-11-19T10:35:05+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/blog/posts/amazon_firetv_review/</loc>
     <lastmod>2020-11-19T10:34:22+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/</loc>
-    <lastmod>2020-11-19T10:34:22+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/posts/</loc>
-    <lastmod>2020-11-19T10:34:22+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/blog/tags/reviews/</loc>
-    <lastmod>2020-11-19T10:34:22+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/tags/</loc>
     <lastmod>2020-11-19T10:34:22+00:00</lastmod>
   </url>
   
@@ -55,21 +70,6 @@
   <url>
     <loc>/blog/posts/workflow_for_publishing_blogs_from_ipad_using_bear_and_hugo/</loc>
     <lastmod>2020-11-16T15:23:22+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/tags/algorithms/</loc>
-    <lastmod>2020-11-16T15:13:35+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/posts/dijkstras_shortest_path_algorithm_intuition_for_proof_and_code_in_python/</loc>
-    <lastmod>2020-11-16T15:13:35+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/tags/programming/</loc>
-    <lastmod>2020-11-16T15:13:35+00:00</lastmod>
   </url>
   
   <url>
