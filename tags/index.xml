@@ -2,72 +2,72 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on My blogs on random things</title>
-    <link>/blog/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on My blogs on random things</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>You</copyright>
-    <lastBuildDate>Thu, 19 Nov 2020 10:35:05 +0000</lastBuildDate><atom:link href="/blog/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>algorithms</title>
-      <link>/blog/tags/algorithms/</link>
-      <pubDate>Thu, 19 Nov 2020 10:35:05 +0000</pubDate>
-      
-      <guid>/blog/tags/algorithms/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>programming</title>
-      <link>/blog/tags/programming/</link>
-      <pubDate>Thu, 19 Nov 2020 10:35:05 +0000</pubDate>
-      
-      <guid>/blog/tags/programming/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>reviews</title>
-      <link>/blog/tags/reviews/</link>
-      <pubDate>Thu, 19 Nov 2020 10:34:22 +0000</pubDate>
-      
-      <guid>/blog/tags/reviews/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>bets</title>
-      <link>/blog/tags/bets/</link>
-      <pubDate>Tue, 17 Nov 2020 04:19:21 +0000</pubDate>
-      
-      <guid>/blog/tags/bets/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>covid</title>
-      <link>/blog/tags/covid/</link>
-      <pubDate>Tue, 17 Nov 2020 04:19:21 +0000</pubDate>
-      
-      <guid>/blog/tags/covid/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Mon, 30 Nov 2020 09:46:17 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>blogging</title>
-      <link>/blog/tags/blogging/</link>
-      <pubDate>Mon, 16 Nov 2020 15:23:22 +0000</pubDate>
+      <link>/tags/blogging/</link>
+      <pubDate>Mon, 30 Nov 2020 09:46:17 +0000</pubDate>
       
-      <guid>/blog/tags/blogging/</guid>
+      <guid>/tags/blogging/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ipad</title>
-      <link>/blog/tags/ipad/</link>
-      <pubDate>Mon, 16 Nov 2020 15:23:22 +0000</pubDate>
+      <link>/tags/ipad/</link>
+      <pubDate>Mon, 30 Nov 2020 09:46:17 +0000</pubDate>
       
-      <guid>/blog/tags/ipad/</guid>
+      <guid>/tags/ipad/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>algorithms</title>
+      <link>/tags/algorithms/</link>
+      <pubDate>Thu, 19 Nov 2020 10:35:05 +0000</pubDate>
+      
+      <guid>/tags/algorithms/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>programming</title>
+      <link>/tags/programming/</link>
+      <pubDate>Thu, 19 Nov 2020 10:35:05 +0000</pubDate>
+      
+      <guid>/tags/programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>reviews</title>
+      <link>/tags/reviews/</link>
+      <pubDate>Thu, 19 Nov 2020 10:34:22 +0000</pubDate>
+      
+      <guid>/tags/reviews/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bets</title>
+      <link>/tags/bets/</link>
+      <pubDate>Tue, 17 Nov 2020 04:19:21 +0000</pubDate>
+      
+      <guid>/tags/bets/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>covid</title>
+      <link>/tags/covid/</link>
+      <pubDate>Tue, 17 Nov 2020 04:19:21 +0000</pubDate>
+      
+      <guid>/tags/covid/</guid>
       <description></description>
     </item>
     

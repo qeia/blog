@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ipad on My blogs on random things</title>
-    <link>/blog/tags/ipad/</link>
+    <link>/tags/ipad/</link>
     <description>Recent content in ipad on My blogs on random things</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>You</copyright>
-    <lastBuildDate>Mon, 16 Nov 2020 15:23:22 +0000</lastBuildDate><atom:link href="/blog/tags/ipad/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 30 Nov 2020 09:46:17 +0000</lastBuildDate><atom:link href="/tags/ipad/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Workflow for Publishing Blogs From iPad using Bear and Hugo </title>
-      <link>/blog/posts/workflow_for_publishing_blogs_from_ipad_using_bear_and_hugo/</link>
-      <pubDate>Mon, 16 Nov 2020 15:23:22 +0000</pubDate>
+      <link>/posts/workflow_for_publishing_blogs_from_ipad_using_bear_and_hugo/</link>
+      <pubDate>Mon, 30 Nov 2020 09:46:17 +0000</pubDate>
       
-      <guid>/blog/posts/workflow_for_publishing_blogs_from_ipad_using_bear_and_hugo/</guid>
+      <guid>/posts/workflow_for_publishing_blogs_from_ipad_using_bear_and_hugo/</guid>
       <description>Ever since I bought myself an iPad mini, I wanted to use it more and more trying my hardest to justify the purchase. But that is not to say it is a bad device or anything, but I could just blog normally using my laptop. But&amp;hellip; that’s just not as interesting. So here is a slightly contrived way to blog directly from iPad using the Bear app, a toy server and Github pages.</description>
     </item>
     

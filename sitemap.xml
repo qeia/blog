@@ -3,77 +3,77 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/blog/tags/algorithms/</loc>
+    <loc>/tags/blogging/</loc>
+    <lastmod>2020-11-30T09:46:17+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/ipad/</loc>
+    <lastmod>2020-11-30T09:46:17+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2020-11-30T09:46:17+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/</loc>
+    <lastmod>2020-11-30T09:46:17+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-11-30T09:46:17+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/workflow_for_publishing_blogs_from_ipad_using_bear_and_hugo/</loc>
+    <lastmod>2020-11-30T09:46:17+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/algorithms/</loc>
     <lastmod>2020-11-19T10:35:05+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/posts/dijkstras_shortest_path_algorithm_intuition_for_proof_and_code_in_python/</loc>
+    <loc>/posts/dijkstras_shortest_path_algorithm_intuition_for_proof_and_code_in_python/</loc>
     <lastmod>2020-11-19T10:35:05+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/</loc>
+    <loc>/tags/programming/</loc>
     <lastmod>2020-11-19T10:35:05+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/posts/</loc>
-    <lastmod>2020-11-19T10:35:05+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/tags/programming/</loc>
-    <lastmod>2020-11-19T10:35:05+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/tags/</loc>
-    <lastmod>2020-11-19T10:35:05+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/posts/amazon_firetv_review/</loc>
+    <loc>/posts/amazon_firetv_review/</loc>
     <lastmod>2020-11-19T10:34:22+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/tags/reviews/</loc>
+    <loc>/tags/reviews/</loc>
     <lastmod>2020-11-19T10:34:22+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/tags/bets/</loc>
+    <loc>/tags/bets/</loc>
     <lastmod>2020-11-17T04:19:21+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/tags/covid/</loc>
+    <loc>/tags/covid/</loc>
     <lastmod>2020-11-17T04:19:21+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/posts/my_bets_on_future_with_covid/</loc>
+    <loc>/posts/my_bets_on_future_with_covid/</loc>
     <lastmod>2020-11-17T04:19:21+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/tags/blogging/</loc>
-    <lastmod>2020-11-16T15:23:22+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/tags/ipad/</loc>
-    <lastmod>2020-11-16T15:23:22+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/posts/workflow_for_publishing_blogs_from_ipad_using_bear_and_hugo/</loc>
-    <lastmod>2020-11-16T15:23:22+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/categories/</loc>
+    <loc>/categories/</loc>
   </url>
   
 </urlset>

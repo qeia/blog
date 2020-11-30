@@ -2,18 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on My blogs on random things</title>
-    <link>/blog/posts/</link>
+    <link>/posts/</link>
     <description>Recent content in Posts on My blogs on random things</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>You</copyright>
-    <lastBuildDate>Thu, 19 Nov 2020 10:35:05 +0000</lastBuildDate><atom:link href="/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 30 Nov 2020 09:46:17 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Workflow for Publishing Blogs From iPad using Bear and Hugo </title>
+      <link>/posts/workflow_for_publishing_blogs_from_ipad_using_bear_and_hugo/</link>
+      <pubDate>Mon, 30 Nov 2020 09:46:17 +0000</pubDate>
+      
+      <guid>/posts/workflow_for_publishing_blogs_from_ipad_using_bear_and_hugo/</guid>
+      <description>Ever since I bought myself an iPad mini, I wanted to use it more and more trying my hardest to justify the purchase. But that is not to say it is a bad device or anything, but I could just blog normally using my laptop. But&amp;hellip; that’s just not as interesting. So here is a slightly contrived way to blog directly from iPad using the Bear app, a toy server and Github pages.</description>
+    </item>
+    
     <item>
       <title>Dijkstra’s Shortest Path Algorithm: Intuition for proof and code in Python </title>
-      <link>/blog/posts/dijkstras_shortest_path_algorithm_intuition_for_proof_and_code_in_python/</link>
+      <link>/posts/dijkstras_shortest_path_algorithm_intuition_for_proof_and_code_in_python/</link>
       <pubDate>Thu, 19 Nov 2020 10:35:05 +0000</pubDate>
       
-      <guid>/blog/posts/dijkstras_shortest_path_algorithm_intuition_for_proof_and_code_in_python/</guid>
+      <guid>/posts/dijkstras_shortest_path_algorithm_intuition_for_proof_and_code_in_python/</guid>
       <description>What is shortest path? If you are already familiar with what Dijkstra’s shortest path algorithm intends to do then skip this section.
 A graph, for those who are unfamiliar or have forgotten, is just a collection of ordered pairs of “points” which are also called edges. These pairs of points may have a distance associated with them in which case they are known as “weighted”.
 Given a graph with positive weights and a source “vertex” i.</description>
@@ -21,31 +30,22 @@ Given a graph with positive weights and a source “vertex” i.</description>
     
     <item>
       <title>Amazon FireTV review </title>
-      <link>/blog/posts/amazon_firetv_review/</link>
+      <link>/posts/amazon_firetv_review/</link>
       <pubDate>Thu, 19 Nov 2020 10:34:22 +0000</pubDate>
       
-      <guid>/blog/posts/amazon_firetv_review/</guid>
+      <guid>/posts/amazon_firetv_review/</guid>
       <description>So I recently bought an Amazon FireTV lite for Rs 2,100 in hopes that I could put my TV to some use. Here’s my experience with it. The Good I didn’t realise this at first, but the FireTV is actually some sort of a skin on Android TV I think and this brings in the same familiarity and customisability. Something I long forgotten existed since my recent shift to the Apple ecosystem.</description>
     </item>
     
     <item>
       <title>My Bets on Future with Covid </title>
-      <link>/blog/posts/my_bets_on_future_with_covid/</link>
+      <link>/posts/my_bets_on_future_with_covid/</link>
       <pubDate>Tue, 17 Nov 2020 04:19:21 +0000</pubDate>
       
-      <guid>/blog/posts/my_bets_on_future_with_covid/</guid>
+      <guid>/posts/my_bets_on_future_with_covid/</guid>
       <description>I’m no medical professional nor do I have any prior personal experience with COVID19 or any related pandemic. The last serious one in my country was Swine Flu and I was in my teens at that time.
 But allow me to make some predictions, Mark My Words style.
 Predictions  At least 3 types of vaccines will be developed and used worldwide and problems will be found in all of them The vaccines will be known to help only certain people (say a good 95% of them) but only for a short while.</description>
-    </item>
-    
-    <item>
-      <title>Workflow for Publishing Blogs From iPad using Bear and Hugo </title>
-      <link>/blog/posts/workflow_for_publishing_blogs_from_ipad_using_bear_and_hugo/</link>
-      <pubDate>Mon, 16 Nov 2020 15:23:22 +0000</pubDate>
-      
-      <guid>/blog/posts/workflow_for_publishing_blogs_from_ipad_using_bear_and_hugo/</guid>
-      <description>Ever since I bought myself an iPad mini, I wanted to use it more and more trying my hardest to justify the purchase. But that is not to say it is a bad device or anything, but I could just blog normally using my laptop. But&amp;hellip; that’s just not as interesting. So here is a slightly contrived way to blog directly from iPad using the Bear app, a toy server and Github pages.</description>
     </item>
     
   </channel>
