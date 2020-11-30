@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>You</copyright>
-    <lastBuildDate>Mon, 30 Nov 2020 09:46:17 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 30 Nov 2020 09:47:25 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Amazon FireTV review </title>
+      <link>/posts/amazon_firetv_review/</link>
+      <pubDate>Mon, 30 Nov 2020 09:47:25 +0000</pubDate>
+      
+      <guid>/posts/amazon_firetv_review/</guid>
+      <description>So I recently bought an Amazon FireTV lite for Rs 2,100 in hopes that I could put my TV to some use. Here’s my experience with it. The Good I didn’t realise this at first, but the FireTV is actually some sort of a skin on Android TV I think and this brings in the same familiarity and customisability. Something I long forgotten existed since my recent shift to the Apple ecosystem.</description>
+    </item>
+    
     <item>
       <title>Workflow for Publishing Blogs From iPad using Bear and Hugo </title>
       <link>/posts/workflow_for_publishing_blogs_from_ipad_using_bear_and_hugo/</link>
@@ -26,15 +35,6 @@
       <description>What is shortest path? If you are already familiar with what Dijkstra’s shortest path algorithm intends to do then skip this section.
 A graph, for those who are unfamiliar or have forgotten, is just a collection of ordered pairs of “points” which are also called edges. These pairs of points may have a distance associated with them in which case they are known as “weighted”.
 Given a graph with positive weights and a source “vertex” i.</description>
-    </item>
-    
-    <item>
-      <title>Amazon FireTV review </title>
-      <link>/posts/amazon_firetv_review/</link>
-      <pubDate>Thu, 19 Nov 2020 10:34:22 +0000</pubDate>
-      
-      <guid>/posts/amazon_firetv_review/</guid>
-      <description>So I recently bought an Amazon FireTV lite for Rs 2,100 in hopes that I could put my TV to some use. Here’s my experience with it. The Good I didn’t realise this at first, but the FireTV is actually some sort of a skin on Android TV I think and this brings in the same familiarity and customisability. Something I long forgotten existed since my recent shift to the Apple ecosystem.</description>
     </item>
     
     <item>

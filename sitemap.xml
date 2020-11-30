@@ -3,27 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/posts/amazon_firetv_review/</loc>
+    <lastmod>2020-11-30T09:47:25+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2020-11-30T09:47:25+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/</loc>
+    <lastmod>2020-11-30T09:47:25+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/reviews/</loc>
+    <lastmod>2020-11-30T09:47:25+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-11-30T09:47:25+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tags/blogging/</loc>
     <lastmod>2020-11-30T09:46:17+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/ipad/</loc>
-    <lastmod>2020-11-30T09:46:17+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/</loc>
-    <lastmod>2020-11-30T09:46:17+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/posts/</loc>
-    <lastmod>2020-11-30T09:46:17+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
     <lastmod>2020-11-30T09:46:17+00:00</lastmod>
   </url>
   
@@ -45,16 +55,6 @@
   <url>
     <loc>/tags/programming/</loc>
     <lastmod>2020-11-19T10:35:05+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/posts/amazon_firetv_review/</loc>
-    <lastmod>2020-11-19T10:34:22+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/reviews/</loc>
-    <lastmod>2020-11-19T10:34:22+00:00</lastmod>
   </url>
   
   <url>
